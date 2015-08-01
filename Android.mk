@@ -517,7 +517,7 @@ EMULATOR_FILES := \
 	$(PRODUCT_OUT)/userdata.img \
 	$(PRODUCT_OUT)/ramdisk.img
 
-ifneq ($(filter 15 17 18, $(PLATFORM_SDK_VERSION)),)
+ifneq ($(filter 17 18, $(PLATFORM_SDK_VERSION)),)
 EMULATOR_FILES += \
 	$(HOST_OUT)/bin/qemu-android-x86
 else
